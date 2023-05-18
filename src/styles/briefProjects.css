@@ -1,0 +1,97 @@
+.projectsContainer{
+    margin-top: 4rem;
+    width: 100%;
+    position: relative;
+    padding: var(--padding);
+}
+.projectsContainer h1{
+    text-align: right;
+    margin-right: 8rem;
+}
+.projectsContainer .projects{
+    width: 100%;
+    display: grid   ;
+    grid-auto-flow: column;
+    grid-auto-rows: min-content;
+    grid-auto-columns: 45%;
+    gap: 2rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 17px;
+    grid-auto-rows: max-content;
+}
+.projects::-webkit-scrollbar{
+    background: transparent;
+}
+.projectsContainer .projects .project{
+    box-shadow: var(--box-shadow);
+    height:auto;
+    border-radius: 10px;
+    min-height: 0;
+    grid-row-end: span 2;
+}
+.projectsContainer .projects .project .projectImg{
+    background: #000;
+    height: auto;
+    cursor: pointer;
+    width: 100%;
+    position: relative;
+}
+
+.projectsContainer .projects .project .projectImg img{
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    inline-size: 100%;
+    opacity: 0.7;
+    border-radius: 10px 10px 0 0;
+}
+
+.projectsContainer .projects .project .textArea{
+    padding: 24px 12px;
+}
+.projectsContainer .projects .project .textArea .header{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+    font-size: larger;
+    margin-bottom: 2rem;
+}
+.projectsContainer .projects .project button{
+    color: var(--color);
+    background: none;
+    padding: 2px 12px;
+    border: 1px solid var(--green);
+    border-radius: 7px;
+    font-size: 12px;
+    cursor: pointer;
+    transform: .5s linear;
+}
+.projectsContainer .projects .project button:hover{
+    border: 2px solid var(--green)
+}
+
+.projectsContainer .projects .project .textArea p{
+    word-spacing: 4px;
+}
+.projectsContainer .projects .project .btns{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    padding: 0;
+}
+
+@media (max-width: 520px){
+    .projectsContainer .projects{
+        grid-auto-columns: 85%;
+    }
+    
+    .projectsContainer .projects .project .btns{
+    }
+    .projectsContainer .projects .project .btns .btnStyle, .btns .btnStyle i{
+        font-size: 12px;
+        padding: 3px 6px;
+    }
+}
