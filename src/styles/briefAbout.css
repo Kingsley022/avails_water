@@ -1,22 +1,22 @@
 .briefAboutContainer{
     margin-top: 4rem;
     padding: var(--padding);
-    transform: skewY(4deg);
-    background: rgb(29, 29, 29);
+    /* transform: skewY(4deg); */
+    /* background: rgb(29, 29, 29); */
     color: var(--color);
     /* border-top: 1px solid var(--light-color); */
     border-bottom: 1px solid #000;
 }
 .briefAboutContainer h1{
     margin-bottom: 0;
-    transform: skewY(-4deg);
+    /* transform: skewY(-4deg); */
 }
 
 .briefAboutContainer .briefAbout{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    transform: skewY(-4deg);
+    /* transform: skewY(-4deg); */
 }
 
 .briefAboutContainer .briefAbout .textArea{

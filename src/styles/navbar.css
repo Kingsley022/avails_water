@@ -2,7 +2,7 @@
     width: 100%;
     position: fixed;
     top: 0;
-    background: #000;
+    background: #111;
     display: flex;
     justify-content: space-between;
     padding: 12px 6%;
@@ -11,7 +11,7 @@
 }
 
 .navBarContainer img{
-    width: 185px;
+    width: 165px;
 }
 .navBarContainer ul{
     display: flex;

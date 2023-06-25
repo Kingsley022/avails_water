@@ -1,7 +1,7 @@
 import '../../styles/header.css';
 const Header = ({placeholder}) => {
     return (
-        <h1><span>~</span>{placeholder}<span>~</span></h1>
+        <h1><span><i className='fa fa-'>~</i> </span>{placeholder}<span> <i className='fa fa-'>~</i></span></h1>
     );
 }
  

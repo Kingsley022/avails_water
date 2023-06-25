@@ -10,7 +10,7 @@
 }
 .projectsContainer .projects{
     width: 100%;
-    display: grid   ;
+    display: grid;
     grid-auto-flow: column;
     grid-auto-rows: min-content;
     grid-auto-columns: 45%;
@@ -22,33 +22,50 @@
     -ms-overflow-style: none;
     padding: 17px;
     grid-auto-rows: max-content;
+    scroll-behavior: smooth;
+    /* scroll-snap-type: X mandatory; */
 }
 .projects::-webkit-scrollbar{
     background: transparent;
 }
 .projectsContainer .projects .project{
-    box-shadow: var(--box-shadow);
-    height:auto;
     border-radius: 10px;
-    min-height: 0;
+    border: 1px solid grey;
     grid-row-end: span 2;
+    position: relative;
+    padding: .05rem;
+}
+.projectsContainer .projects .project .description{
+    font-size: 14px;
+    margin-top: 2.5rem;
 }
 .projectsContainer .projects .project .projectImg{
-    background: #000;
-    height: auto;
+    background: #3c3d3b;
     cursor: pointer;
     width: 100%;
+    height: 100%;
     position: relative;
+    border-radius: 12px;
 }
 
 .projectsContainer .projects .project .projectImg img{
     object-fit: cover;
-    aspect-ratio: 16/9;
-    inline-size: 100%;
-    opacity: 0.7;
-    border-radius: 10px 10px 0 0;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
 }
-
+.projectsContainer .projects .project .language{
+    color: #fff;
+    border: 1px solid green;
+    display: inline-block;
+    padding: .2rem .5rem;
+    margin: .8rem .3rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 12px;
+}
 .projectsContainer .projects .project .textArea{
     padding: 24px 12px;
 }
@@ -56,7 +73,7 @@
     display: flex;
     justify-content: space-between;
     font-weight: bolder;
-    font-size: larger;
+    /* font-size: larger; */
     margin-bottom: 2rem;
 }
 .projectsContainer .projects .project button{
@@ -73,6 +90,37 @@
     border: 2px solid var(--green)
 }
 
+.projectsContainer .projects .project .textArea{
+    position: absolute;
+    background: #1b1a1a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: cover;
+    border: .3px solid green;
+    height: 100%;
+    top: 0;
+    border-radius: 12px;
+    z-index: 7;
+    display: none;
+}
+.projectsContainer .projects .project:hover{
+    border: none;
+}
+.projectsContainer .projects .project:hover .textArea{
+    display: block;
+    justify-content: center;
+    animation-name: slideIn;
+    animation-duration: 1s;
+}
+@keyframes slideIn {
+    from{
+        margin-top: -9rem;
+    }
+    to{
+        margin-top: 0;
+    }
+}
 .projectsContainer .projects .project .textArea p{
     word-spacing: 4px;
 }

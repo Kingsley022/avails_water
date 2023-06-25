@@ -1,3 +1,8 @@
+import game_hub from '../assets/game_hub.png';
+import amazon_clone from '../assets/amazon_clone.png';
+import netflix_clone from '../assets/netflix_clone.png';
+import avail_water from '../assets/avail_waters.jpeg';
+
 export const myNavLinks = [
     {
         id:1,
@@ -27,12 +32,17 @@ export const skills = [
         name: 'Front-End',
         classname: 'frontend',
         skillNames:[
-                {star: 'fa fa-star', skill: 'ReactJs'}, 
+                {skill: 'React.Js'},
                 {skill: 'JavaScript'},
                 {skill: 'TypeScript'},
+                {skill: 'Next.js'},
                 {skill: 'Bootstrap'},
                 {skill: 'SASS'},
-                {skill: 'CSS'}
+                {skill: 'Tailwind'},
+                {skill: 'Chakra UI'},
+                {skill: 'Styled Component'},
+                {skill: 'CSS'},
+                {skill: 'Html'}
             ],
     },
 
@@ -41,9 +51,12 @@ export const skills = [
         name: 'Back-End',
         classname: 'backend',
         skillNames:[
-                {skill: 'NodeJs'}, 
+                {skill: 'Node.Js'}, 
+                {skill: 'MongoDB'}, 
+                {skill: 'Express.Js'}, 
                 {skill: 'Python'},
-                {skill: 'PHP'}
+                {skill: 'PHP'},
+                {skill: 'MySQL'},
             ],
     },
 
@@ -51,10 +64,10 @@ export const skills = [
         id:3,
         name: '-Others',
         classname: 'others',
-        skillNames:[
-                {skill: 'SQL'}, 
-                {skill: 'DART'},
-                {skill: 'Git'}
+        skillNames:[ 
+                {skill: 'Dart'},
+                {skill: 'Git'},
+                {skill: 'Github'}
             ],
     }
 ];
@@ -63,31 +76,37 @@ export const projects = [
     {
         id: 1,
         isToggled: false,
-        img: "../images/availsReact.jpeg",
+        img: game_hub,
         name: 'e-Commerce' ,
         language: 'ReactJs',
         description: `I built this project from scratch using React as a result of mastering the use of CRUD operations in React.
         I also made use of React-Hooks such as useEffect, 
-     useState and few customHooks. i aslo used some react libraries such as react-hook-form, react-scroll, react-router-dom and more.`
+     useState and few customHooks. i aslo used some react libraries such as react-hook-form, react-scroll, react-router-dom and more.`,
+        weblink: 'https://game-hub-ebon-seven.vercel.app',
+        gitlink: 'https://github.com/Kingsley022/game-hub'
     },
     {
         id: 2,
         isToggled: false,
-        img: "../images/availsJs.jpeg",
+        img: amazon_clone,
         name: 'e-Commerce' ,
         language: 'JavaScript',
         description: `I built this project from scratch using React as a result of mastering the use of CRUD operations in React.
         I also made use of React-Hooks such as useEffect, 
-     useState and few customHooks. i aslo used some react libraries such as react-hook-form, react-scroll, react-router-dom and more.`
+        useState and few customHooks. i aslo used some react libraries such as react-hook-form, react-scroll, react-router-dom and more.`,
+        weblink: 'https://amazon-clone-gamma-eight.vercel.app/',
+        gitlink: 'https://github.com/Kingsley022/amazon_clone'
     },
     {
         id: 3,
         isToggled: false,
-        img: "../images/todo.jpeg",
+        img: netflix_clone,
         name: 'Todo',
         language: 'JavaScript',
         description: `I built this project from scratch using React as a result of mastering the use of CRUD operations in React.
         I also made use of React-Hooks such as useEffect, 
-     useState and few customHooks. i aslo used some react libraries such as react-hook-form, react-scroll, react-router-dom and more.`
+        useState and few customHooks. i aslo used some react libraries such as react-hook-form, react-scroll, react-router-dom and more.`,
+        weblink: 'https://netflix-clone-beige-eta.vercel.app/',
+        gitlink: 'https://github.com/Kingsley022/netflix_clone'
     }
 ];

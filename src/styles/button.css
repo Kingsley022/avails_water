@@ -19,6 +19,5 @@
    font-size: 16px;
 }
 .button:hover{
-    background: var(--green);
-    color: #ffffff;
+    color: lightgreen;
 }

@@ -12,7 +12,7 @@ const Skills = () => {
                     <h2 className={skill.classname}>{skill.name}</h2>
                     <ul>
                         {skill.skillNames.map((skillName, index) => (
-                            <li key={index}>{skillName.skill.toLocaleUpperCase()} <i className={skillName.star}></i></li>
+                            <li key={index}>{skillName.skill}</li>
                         ))}
                     </ul>
                 </div>
