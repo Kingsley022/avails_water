@@ -2,6 +2,7 @@ import game_hub from '../assets/game_hub.png';
 import amazon_clone from '../assets/amazon_clone.png';
 import netflix_clone from '../assets/netflix_clone.png';
 import avail_water from '../assets/avail_waters.jpeg';
+import quizzy from '../assets/quizzy2.png'
 
 export const myNavLinks = [
     {
@@ -73,6 +74,18 @@ export const skills = [
 ];
 
 export const projects = [
+    {
+        id: 4,
+        isToggled: false,
+        img: quizzy,
+        name: 'e-Commerce' ,
+        language: 'ReactJs',
+        description: `I built this project from scratch using React as a result of mastering the use of CRUD operations in React.
+        I also made use of React-Hooks such as useEffect, 
+     useState and few customHooks. i aslo used some react libraries such as react-hook-form, react-scroll, react-router-dom and more.`,
+        weblink: '',
+        gitlink: 'https://github.com/Kingsley022/game-hub'
+    },
     {
         id: 1,
         isToggled: false,
